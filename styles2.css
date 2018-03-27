@@ -1,5 +1,5 @@
 html {
-    background: url('_images/sea_beach4000x2678.jpg') no-repeat center center fixed;
+    background: url('sea_beach4000x2678.jpg') no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     height: 100%;
@@ -124,6 +124,7 @@ button#submit{
     font-size: 1em;
     text-align: center;
     background-color: rgba(252,197,0,1);/*google yellow #FCC500*/
+    border: 1px solid rgba(299,299,299,0.5);/*#e5e5e5 grey 90 */
     color: #fff;
     transition: 0.25s linear;
 }
@@ -236,6 +237,7 @@ span.heart {
     
     .container-row-bottom-item:nth-child(1){
         background-color: rgba(80,117,241,0.8);/*google blue #5075F1*/
+        border-top: 1px solid rgba(299,299,299,0.5);/*#e5e5e5 grey 90 */
     }
     
     .container-row-item:nth-child(2){

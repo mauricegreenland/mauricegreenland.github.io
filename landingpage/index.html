@@ -2,44 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css" type='text/css'>
+    <title>Landing - V2</title>
+    <link rel="stylesheet" href="styles2.css" type='text/css'>
 </head>
-<body>
-   <div id='container-row'>
-      
-      <section class='container-column pic-bkg'>
-        
-        <nav id='main-nav' >
-            <ul id='main-nav-list'>
-                <li><a href='#'>Home</a></li>
-            </ul>
-        </nav>
 
-        <div class='tag-line'>
-            <p>#comingSoon</p>
-        </div> 
-      </section>
-      
-      <section class='container-column solid-bkg'>
-      
-          <div class='tag-line'>
-              <p>#earthisNOTflat</p>
-          </div>
-      
-      </section>
-      
-    <section class='container-column contact-box'>
-        <input type='email' id='email' name='email' placeholder="Email address">
-        <input type='text' id='enter-btn' value='Notify Me!'>
-    </section>
-    
-   <footer>
-       <div>
-            <p>Made in London with <span class='heart'>&hearts;</span> &copy;2018 </p>
-       </div>
-   </footer>
-   </div><!-- close id container-row -->
-   <!-- id container-row is for flexbox 2 column layout -->
+<body>
+<header id='container-header'>
+    <nav class='container-header-item'>
+        <ul id='container-ul'>
+            <li><a href='index2.html'>Home</a></li>
+        </ul>
+    </nav>
+    <div class='container-header-item'>
+        <img src='_images/bars.png' alt='nav bars'>
+    </div>
+</header>
+    <div id='container-row'>
+
+        <div class='container-row-item'></div>
+        
+        <div class='container-row-item'></div>
+        
+        <!-- contact form: absolute positioning -->
+        <form id='form-container' class='container-row-item'>
+            <input type='email' name='email' id='email' placeholder='Email address'>
+            <button id='submit'>Mail Me!</button>
+        </form>
+
+        <!-- Secondary flex container for items in bottom half of screen -->
+        <section id='container-row-bottom'>
+
+            <div class='container-row-bottom-item'>
+                <h3>#coolComingSoon</h3>
+            </div>
+
+            <div class='container-row-bottom-item'>
+                <h3>#earthisNOTflat</h3>
+            </div>
+
+        </section>
+        <!-- close section id container-row-bottom -->
+       <footer>
+           <div>
+                <p>Made in London with <span class='heart'>&hearts;</span> &copy;2018 </p>
+           </div>
+       </footer>
+    </div><!-- close id container-row -->
 </body>
 </html>

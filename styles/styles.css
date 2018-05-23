@@ -9,8 +9,3 @@ html {
 .navControlMiddle {
     flex-flow: row nowrap;
 }
-
-.myIcon {
-    width: 30%;
-    height: auto;
-}

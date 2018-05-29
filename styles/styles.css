@@ -9,6 +9,7 @@ html {
 	-o-background-size: cover;
     font-size: 16px;
     font-weight: normal;
+    overflow: hidden;
 }
 
 
@@ -23,23 +24,49 @@ body {
 NAVBAR
 */
 
+.navUlCustom {
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.navUlCustom > li {
+    margin-right: 0.5em; 
+}
+
+.navUlCustom li:nth-child(5){
+    margin-right: 0;
+}
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: #8d8d8d;
+
+}
+
+.navbar-custom {
+    background-color: rgba(16,39,68, 1); /*Custom background color #102744 very dark blue*/
 }
 
 /*
-LINKS
+NAV LINKS
 */
 
-a {
-    color: #8d8d8d;
+/* change the nav link color*/
+.navbar-custom .navbar-nav .nav-link{
+    color: rbga(31,75,130,1); /*dark blue #1f4b82*/
     text-decoration: none;   
 }
 
-a:hover {
-    color: green;
+/* change the color hovered links */
+.navbar-custom .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: rgba(39,68,16,1); /*very dark green #274410*/
     text-decoration: none;
+}
+
+/* dropdown - only */
+.navbar-custom .dropdown-item {
+    font-size: 0.8em;
 }
 

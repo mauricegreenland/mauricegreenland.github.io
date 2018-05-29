@@ -43,17 +43,3 @@ a:hover {
     text-decoration: none;
 }
 
-/*
-MIDDLE NAVIGATION CONTROLS - HOME,ABOUT,SKILLS,WORK,CONTACT
-*/
-.navControlMiddle {
-    flex-flow: row nowrap;
-}
-
-.navControlMiddle > li {
-    margin-right: 1em;
-}
-
-.navControlMiddle li:nth-child(5) {
-    margin-right: 0;
-}

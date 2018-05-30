@@ -31,6 +31,7 @@ NAVBAR
 
 .navUlCustom > li {
     margin-right: 0.5em; 
+    padding: 0;
 }
 
 .navUlCustom li:nth-child(5){
@@ -52,6 +53,10 @@ NAVBAR
 NAV LINKS
 */
 
+.nav-link{ 
+
+}
+
 /* change the nav link color*/
 .navbar-custom .navbar-nav .nav-link{
     color: rbga(31,75,130,1); /*dark blue #1f4b82*/
@@ -68,4 +73,16 @@ NAV LINKS
 /* dropdown - only */
 .navbar-custom .dropdown-item {
     font-size: 0.8em;
+}
+
+/*NAV SOCIAL MEDIA ICONS*/
+.iconImg {
+    width: 30%;
+    height: 30%;
+}
+
+#iconHome, #iconAbout, #iconSkills, #iconWork, #iconContact {
+    width: 30%;
+    height: 30%;
+    margin-bottom: 1em;
 }

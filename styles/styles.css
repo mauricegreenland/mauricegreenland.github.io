@@ -61,7 +61,7 @@ NAV LINKS
 /* change the color hovered links */
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: rgba(39,68,16,1); /*very dark green #274410*/
+    color: rgba(75,130,31,1); /* bright green #4b821f*/
     text-decoration: none;
 }
 
@@ -69,4 +69,3 @@ NAV LINKS
 .navbar-custom .dropdown-item {
     font-size: 0.8em;
 }
-

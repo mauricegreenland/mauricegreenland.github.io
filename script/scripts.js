@@ -1,31 +1,28 @@
-//Add event listener for mouseover twitter icon
-document.querySelector('.iconTwitter').addEventListener('mouseover', function () {
-    
-    //change image source to show hover state color 
-    document.querySelector('.iconTwitter').src = 'myicons/2x/logo-twitter-hover@2x.png';
+//EVENT LISTENER - MOUSE OVER - HOME
+document.getElementById('navIconHome').addEventListener('mouseover', function () {
+
+    console.log('HOME');
+    //REMOVE THE ID
+    var homeDom = document.querySelector('#navIconHome');
+    homeDom.removeAttribute('id');
+    //ADD TEXT
+    //Text node
+    var homeTxt = document.createTextNode('Home');
+    //Append text node to element
+    homeDom.appendChild(homeTxt);
 
 });
 
-//Add event listener for mouseout twitter icon
-document.querySelector('.iconTwitter').addEventListener('mouseout', function () {
-    
-    //change image source to show normal state color
-    document.querySelector('.iconTwitter').src = 'myicons/2x/logo-twitter@2x.png';
+//EVENT LISTENER - MOUSE OUT - HOME
+document.getElementById('navIconHome').addEventListener('mouseover', function () {
 
-});
-
-//Add event listener for mouseover linkedin icon
-document.querySelector('.iconLinkedin').addEventListener('mouseover', function () {
-    
-    //change image source to show hover state color 
-    document.querySelector('.iconLinkedin').src = 'myicons/2x/logo-linkedin-hover@2x.png';
-
-});
-
-//Add event listener for mouseout twitter icon
-document.querySelector('.iconLinkedin').addEventListener('mouseout', function () {
-    
-    //change image source to show normal state color
-    document.querySelector('.iconLinkedin').src = 'myicons/2x/logo-linkedin@2x.png';
+    console.log('HOME - OUT');
+    //ADD THE ID
+    var homeDom = document.querySelector('.home');
+    homeDom.setAttribute('id','#navIconHome');
+    //REMOVE TEXT
+    //Text node
+    var homeTxt = document.createTextNode('');
+    homeDom.removeChild(homeTxt);
 
 });

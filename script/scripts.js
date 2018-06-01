@@ -14,15 +14,17 @@ document.getElementById('navIconHome').addEventListener('mouseover', function ()
 });
 
 //EVENT LISTENER - MOUSE OUT - HOME
-document.getElementById('navIconHome').addEventListener('mouseover', function () {
+document.getElementById('navIconHome').addEventListener('mouseout', function () {
 
     console.log('HOME - OUT');
-    //ADD THE ID
+    //ADD THE ID BACK
     var homeDom = document.querySelector('.home');
-    homeDom.setAttribute('id','#navIconHome');
-    //REMOVE TEXT
-    //Text node
-    var homeTxt = document.createTextNode('');
-    homeDom.removeChild(homeTxt);
-
+    homeDom.setAttribute('id','navIconHome');
+    
+var x = document.getElementById("navIconHome");
+var y = x.childNodes[0];
+var z = y.nodeValue;
+    z += '';
+    console.log(z);
+    homeDom.removeChild(y);
 });

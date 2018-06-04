@@ -53,49 +53,10 @@ NAVBAR
 NAV LINKS
 */
 
-#navIconHome {
-    background-image: url('/myicons/2x/home@2x.png');
-    background-size: 32px 32px;
-    background-repeat: no-repeat;
-    display: block;
-    height: 32px;
-    width: 32px;
-}
 
-#navIconAbout {
-    background-image: url('/myicons/2x/about@2x.png');
-    background-size: 32px 32px;
-    background-repeat: no-repeat;
-    display: block;
+.nav-item {
     height: 32px;
-    width: 32px;
-}
-
-#navIconSkills {
-    background-image: url('/myicons/2x/skills@2x.png');
-    background-size: 32px 32px;
-    background-repeat: no-repeat;
     display: block;
-    height: 32px;
-    width: 32px;
-}
-
-#navIconWork {
-    background-image: url('/myicons/2x/work@2x.png');
-    background-size: 32px 32px;
-    background-repeat: no-repeat;
-    display: block;
-    height: 32px;
-    width: 32px;
-}
-
-#navIconContact {
-    background-image: url('/myicons/2x/contact@2x.png');
-    background-size: 32px 32px;
-    background-repeat: no-repeat;
-    display: block;
-    height: 32px;
-    width: 32px;
 }
 
 /* change the nav link color*/

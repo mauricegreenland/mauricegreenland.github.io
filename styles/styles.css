@@ -53,7 +53,6 @@ NAVBAR
 NAV LINKS
 */
 
-
 /* change the nav link color*/
 .navbar-custom .navbar-nav .nav-link{
     color: rbga(31,75,130,1); /*dark blue #1f4b82*/
@@ -77,3 +76,46 @@ NAV LINKS
     width: 30%;
     height: 30%;
 }
+
+#homeIcon:hover {
+    content: url("/myicons2/2x/homeh@2x.png");
+}
+
+#aboutIcon:hover{
+    content: url("/myicons2/2x/abouth@2x.png");
+}
+
+#skillsIcon:hover{
+    content: url("/myicons2/2x/skillsh@2x.png");
+}
+
+#workIcon:hover {
+    content: url("/myicons2/2x/workh@2x.png");
+}
+
+#contactIcon:hover {
+    content: url("/myicons2/2x/contacth@2x.png");
+}
+
+#twitterIcon:hover {
+    content: url("/myicons2/2x/twitterh@2x.png");
+}
+
+#linkedinIcon:hover {
+    content: url("/myicons2/2x/linkedinh@2x.png");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

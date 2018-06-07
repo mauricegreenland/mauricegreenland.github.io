@@ -1,12 +1,13 @@
 /*
 FULL PAGE BACKGROUND
 */
+
 html {
-	background: url(/images/bkg.jpg) no-repeat center center fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+    background: url(/images/bkg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     font-size: 16px;
     font-weight: normal;
     overflow: hidden;
@@ -30,15 +31,16 @@ NAVBAR
 }
 
 .navUlCustom > li {
-    margin-right: 0.5em; 
+    margin-right: 0.5em;
     padding: 0;
 }
 
-.navUlCustom li:nth-child(5){
+.navUlCustom li:nth-child(5) {
     margin-right: 0;
 }
 
 /* change the brand and text color */
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: #8d8d8d;
@@ -46,7 +48,8 @@ NAVBAR
 }
 
 .navbar-custom {
-    background-color: rgba(16,39,68, 1); /*Custom background color #102744 very dark blue*/
+    background-color: rgba(16, 39, 68, 1);
+    /*Custom background color #102744 very dark blue*/
 }
 
 /*
@@ -54,32 +57,76 @@ NAV LINKS
 */
 
 /* change the nav link color*/
-.navbar-custom .navbar-nav .nav-link{
-    color: rbga(31,75,130,1); /*dark blue #1f4b82*/
-    text-decoration: none;   
+
+.navbar .navbar-custom {
+    z-index: 3;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rbga(31, 75, 130, 1);
+    /*dark blue #1f4b82*/
+    text-decoration: none;
 }
 
 /* change the color hovered links */
+
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: rgba(75,130,31,1); /* bright green #4b821f*/
+    color: rgba(75, 130, 31, 1);
+    /* bright green #4b821f*/
     text-decoration: none;
 }
 
 /* dropdown - only */
+
 .navbar-custom .dropdown-item {
     font-size: 0.8em;
 }
 
 /*NAV SOCIAL MEDIA ICONS*/
 
+.iconHome::before {
+    content: url("/myicons/2x/home@2x.png");
+}
 
+#navToggleMain a {
+    display: block;
+    position: relative;
+    height: 32px;
+}
 
+#navToggleMain a i {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
 
+}
 
+#navToggleMain a:hover i {
+    opacity: 0;
+}
 
+#navToggleMain a:first-child::after {
+    content: "HOME";
+}
 
+#navToggleMain a:after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: initial;
+    opacity: 1;
 
+}
 
-
-
+#navToggleMain a:hover::after {
+    opacity: 1;
+}

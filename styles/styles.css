@@ -26,49 +26,53 @@ ICONMOON
 */
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mkld5a');
-  src:  url('fonts/icomoon.eot?mkld5a#iefix') format('embedded-opentype'),
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?mkld5a');
+    src: url('fonts/icomoon.eot?mkld5a#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?mkld5a') format('truetype'),
     url('fonts/icomoon.woff?mkld5a') format('woff'),
     url('fonts/icomoon.svg?mkld5a#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-home:before {
-  content: "\e900";
+    content: "\e900";
 }
+
 .icon-newspaper:before {
-  content: "\e904";
+    content: "\e904";
 }
+
 .icon-pencil:before {
-  content: "\e905";
+    content: "\e905";
 }
+
 .icon-user:before {
-  content: "\e971";
+    content: "\e971";
 }
+
 .icon-cog:before {
-  content: "\e994";
+    content: "\e994";
 }
 
 /* END ICON MOON */
-
 
 /*
 NAVBAR
@@ -102,7 +106,14 @@ NAVBAR
 }
 
 .navbar-custom {
-    background-color: rgba(24,24,24,1);/*Custom background color #181818 very dark grey (almost black)*/
+    background-color: rgba(24, 24, 24, 1);
+    /*Custom background color #181818 very dark grey (almost black)*/
+}
+
+/*BS4 class for toggler button*/
+.navbar-toggler {
+    font-size: 1em;
+    padding: 0.25em;
 }
 
 /*
@@ -116,21 +127,24 @@ NAV LINKS
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: rbga(31, 75, 130, 1);/*dark blue #1f4b82*/
+    color: rbga(31, 75, 130, 1);
+    /*dark blue #1f4b82*/
     text-decoration: none;
 }
 
 /* change the color hovered links */
+
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: rgba(221, 50, 70,1);/* bright red #dd3246*/
+    color: rgba(221, 50, 70, 1);
+    /* bright red #dd3246*/
     text-decoration: none;
 }
 
 /* dropdown - only */
 
 .navbar-custom .dropdown-item {
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 /*NAV SOCIAL MEDIA ICONS*/
@@ -140,46 +154,51 @@ ICONMOON
 */
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mkld5a');
-  src:  url('fonts/icomoon.eot?mkld5a#iefix') format('embedded-opentype'),
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?mkld5a');
+    src: url('fonts/icomoon.eot?mkld5a#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?mkld5a') format('truetype'),
     url('fonts/icomoon.woff?mkld5a') format('woff'),
     url('fonts/icomoon.svg?mkld5a#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-    font-size: 1em;
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 1.3em;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-home:before {
-  content: "\e900";
+    content: "\e900";
 }
+
 .icon-newspaper:before {
-  content: "\e904";
+    content: "\e904";
 }
+
 .icon-pencil:before {
-  content: "\e905";
+    content: "\e905";
 }
+
 .icon-user:before {
-  content: "\e971";
+    content: "\e971";
 }
+
 .icon-cog:before {
-  content: "\e994";
+    content: "\e994";
 }
 
 /* END ICON MOON */
@@ -248,4 +267,3 @@ ICONMOON
 #navToggleMain a:hover::after {
     opacity: 1;
 }
-

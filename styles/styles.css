@@ -89,17 +89,20 @@ NAVBAR
     margin-right: 0;
 }
 
+#navToggleMain {
+    font-size: 0.9em;
+    text-transform: lowercase;
+}
+
 /* change the brand and text color */
 
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: #8d8d8d;
-
 }
 
 .navbar-custom {
-    background-color: rgba(16, 39, 68, 1);
-    /*Custom background color #102744 very dark blue*/
+    background-color: rgba(24,24,24,1);/*Custom background color #181818 very dark grey (almost black)*/
 }
 
 /*
@@ -113,17 +116,14 @@ NAV LINKS
 }
 
 .navbar-custom .navbar-nav .nav-link {
-    color: rbga(31, 75, 130, 1);
-    /*dark blue #1f4b82*/
+    color: rbga(31, 75, 130, 1);/*dark blue #1f4b82*/
     text-decoration: none;
 }
 
 /* change the color hovered links */
-
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
-    color: rgba(75, 130, 31, 1);
-    /* bright green #4b821f*/
+    color: rgba(221, 50, 70,1);/* bright red #dd3246*/
     text-decoration: none;
 }
 
@@ -134,6 +134,55 @@ NAV LINKS
 }
 
 /*NAV SOCIAL MEDIA ICONS*/
+
+/*
+ICONMOON
+*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mkld5a');
+  src:  url('fonts/icomoon.eot?mkld5a#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mkld5a') format('truetype'),
+    url('fonts/icomoon.woff?mkld5a') format('woff'),
+    url('fonts/icomoon.svg?mkld5a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+    font-size: 1em;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-newspaper:before {
+  content: "\e904";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+
+/* END ICON MOON */
 
 #navToggleMain a {
     display: block;
@@ -154,21 +203,43 @@ NAV LINKS
     opacity: 0;
 }
 
-#navToggleMain a:first-child::after {
+/*
+- use nth-child() to select which LI 
+- use a:first-child::after to add the content after the corresponding I tag
+*/
+
+#navToggleMain li:nth-child(1) a:first-child::after {
     content: "HOME";
+
+}
+
+#navToggleMain li:nth-child(2) a:first-child::after {
+    content: "ABOUT";
+}
+
+#navToggleMain li:nth-child(3) a:first-child::after {
+    content: "SKILLS";
+}
+
+#navToggleMain li:nth-child(4) a:first-child::after {
+    content: "WORK";
+}
+
+#navToggleMain li:nth-child(5) a:first-child::after {
+    content: "EMAIL";
 }
 
 #navToggleMain a:after {
     content: '';
     position: absolute;
-    bottom: 0px;
+    bottom: 20%;
     left: 0;
     display: block;
     width: 100%;
     text-align: center;
     transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
     transition-delay: initial;
     opacity: 0;
 

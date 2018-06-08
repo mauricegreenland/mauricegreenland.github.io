@@ -22,6 +22,55 @@ body {
 }
 
 /*
+ICONMOON
+*/
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?mkld5a');
+  src:  url('fonts/icomoon.eot?mkld5a#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?mkld5a') format('truetype'),
+    url('fonts/icomoon.woff?mkld5a') format('woff'),
+    url('fonts/icomoon.svg?mkld5a#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\e900";
+}
+.icon-newspaper:before {
+  content: "\e904";
+}
+.icon-pencil:before {
+  content: "\e905";
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-cog:before {
+  content: "\e994";
+}
+
+/* END ICON MOON */
+
+
+/*
 NAVBAR
 */
 
@@ -33,6 +82,7 @@ NAVBAR
 .navUlCustom > li {
     margin-right: 0.5em;
     padding: 0;
+    width: 64px;
 }
 
 .navUlCustom li:nth-child(5) {
@@ -85,10 +135,6 @@ NAV LINKS
 
 /*NAV SOCIAL MEDIA ICONS*/
 
-.iconHome::before {
-    content: url("/myicons/2x/home@2x.png");
-}
-
 #navToggleMain a {
     display: block;
     position: relative;
@@ -100,6 +146,7 @@ NAV LINKS
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     transition-delay: initial;
+    text-align: center;
 
 }
 
@@ -114,7 +161,7 @@ NAV LINKS
 #navToggleMain a:after {
     content: '';
     position: absolute;
-    bottom: 50%;
+    bottom: 0px;
     left: 0;
     display: block;
     width: 100%;
@@ -123,10 +170,11 @@ NAV LINKS
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     transition-delay: initial;
-    opacity: 1;
+    opacity: 0;
 
 }
 
 #navToggleMain a:hover::after {
     opacity: 1;
 }
+

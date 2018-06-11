@@ -160,6 +160,17 @@ ICONMOON
 
 /* END ICON MOON */
 
+.icon-linkedin,
+.icon-youtube,
+.icon-twitter,
+.icon-cog,
+.icon-user,
+.icon-pencil,
+.icon-newspaper,
+.icon-home {
+    font-size: 1.3em;
+}
+
 #navToggleMain a {
     display: block;
     position: relative;

@@ -52,6 +52,11 @@ NAVBAR
     color: #8d8d8d;
 }
 
+.navbar-brand {
+    background-color: #070707;
+    text-align: center;
+}
+
 .navbar-custom {
     background-color: rgba(24, 24, 24, 1);
     /*Custom background color #181818 very dark grey (almost black)*/
@@ -61,6 +66,7 @@ NAVBAR
 .navbar-toggler {
     font-size: 1em;
     padding: 0.25em;
+    border: 0;
 }
 
 /*

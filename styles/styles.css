@@ -26,11 +26,6 @@ NAVBAR
 */
 
 
-#navToggleMain {
-    font-size: 0.9em;
-    text-transform: lowercase;
-}
-
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
@@ -43,19 +38,48 @@ NAVBAR
 }
 
 
-/*BS4 class for toggler button*/
+/*toggler button*/
 .navbar-toggler {
-    font-size: 1em;
-    padding: 0.25em;
-    border: 0;
+    border: none;
+    background: transparent !important;
 }
+
+.navbar-toggler:hover {
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    width: 22px;
+    background-color: white;
+    display: block;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0.25em;
+}
+
+/*ANIMATED MINUS*/
+.navbar-toggler.minus.collapsed .icon-bar:nth-of-type(1){
+    transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggler.minus.collapsed .icon-bar:nth-of-type(3){
+    transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-toggler.minus .icon-bar:nth-of-type(1){
+    transform: translate3d(0,6px,0);
+}
+
+.navbar-toggler.minus .icon-bar:nth-of-type(3){
+    transform: translate3d(0,-6px,0);
+}
+/*END MINUS ANIMATION*/
+
+
 
 .navbar-custom {
     background-color: rgba(24, 24, 24, 1);
     /*Custom background color #181818 very dark grey (almost black)*/
-}
-
-.navbar .navbar-custom {
     z-index: 3;
 }
 
@@ -71,9 +95,6 @@ NAVBAR
     border-bottom: 1px solid rgba(7,7,7,0.2);/* very dark grey #070707*/
 }
 
-.navUlCustom li:nth-child(5) {
-    margin-right: 0;
-}
 
 /*
 NAV LINKS
@@ -86,7 +107,7 @@ NAV LINKS
     text-decoration: none;
 } */
 
-/* change the color hovered links */
+/* change the color hovered nav items */
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: rgba(253, 128, 72, 1);
@@ -94,13 +115,13 @@ NAV LINKS
     text-decoration: none;
 }
 
-/* dropdown - only */
-.navbar-custom .dropdown-item {
+/*dropdown nav content*/
+ #navToggleMain {
     font-size: 1em;
-}
+    text-transform: lowercase;
+} 
 
 /*NAV ICONS*/
-
 /*
 ICONMOON
 */
@@ -176,15 +197,17 @@ ICONMOON
     height: 32px;
 }
 
-#navToggleMain a i {
+/*makes the transition more graceful*/
+  #navToggleMain a i {
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
     transition-delay: initial;
     text-align: center;
+ 
+ }  
 
-}
-
+/*hover over i makes icon disappear*/
 #navToggleMain a:hover i {
     opacity: 0;
 }
@@ -238,7 +261,7 @@ ICONMOON
 
 #mySocialMediaNav a{
     color: #8d8d8d;
-    /* -webkit-transition: all 0.8s ease-in-out; */
+    -webkit-transition: all 0.8s ease-in-out; 
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;

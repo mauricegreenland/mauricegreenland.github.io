@@ -48,6 +48,7 @@ NAVBAR
 
 
 /*toggler button*/
+
 .navbar-toggler {
     border: none;
     background: transparent !important;
@@ -72,7 +73,9 @@ NAVBAR
 /*
 NAV LINKS
 */
+
 /* change the color hovered nav items */
+
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: rgba(253, 128, 72, 1);
@@ -94,6 +97,7 @@ button:hover {
 
 
 /*ANIMATED MINUS*/
+
 .navbar-toggler.minus.collapsed .icon-bar:nth-of-type(1) {
     transform: translate3d(0, 0, 0) rotate(0deg);
 }
@@ -113,13 +117,15 @@ button:hover {
 /*END MINUS ANIMATION*/
 
 /*hover state for toggler hamburger*/
+
 .navbar-toggler.minus.collapsed:hover > span.icon-bar,
-.navbar-toggler.minus:hover > span.icon-bar{
+.navbar-toggler.minus:hover > span.icon-bar {
     background-color: rgba(253, 128, 72, 1);
     /* bright orange #FD8048*/
 }
 
 /*dropdown nav content*/
+
 #navToggleMain {
     font-size: 1em;
     text-transform: lowercase;
@@ -128,7 +134,7 @@ button:hover {
     /*animation of drop-down nav-bar*/
     animation-duration: 0.3s;
     animation-timing-function: ease-in-out;
-    
+
 }
 
 
@@ -147,6 +153,7 @@ button:hover {
 
 
 /*NAV ICONS*/
+
 /*
 ICONMOON
 */
@@ -300,16 +307,54 @@ ICONMOON
     opacity: 1;
 }
 
-#mySocialMediaNav a {
-    color: #8d8d8d;
-    -webkit-transition: all 0.8s ease-in-out;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
+#mySocialMediaNav {
+    display: none;
 }
 
-#mySocialMediaNav a:hover {
-    color: rgba(253, 128, 72, 1);
-    /* bright orange #FD8048*/
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    #mySocialMediaNav {
+        display: flex;
+    }
+
+    #mySocialMediaNav a {
+        color: #8d8d8d;
+        -webkit-transition: all 0.8s ease-in-out;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: initial;
+    }
+
+    #mySocialMediaNav a:hover {
+        color: rgba(253, 128, 72, 1);
+        /* bright orange #FD8048*/
+    }
+    
+    #navToggleMain {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    
+    #navToggleMain ul li.nav-item {
+        width: 10%;
+    }
+    
+    #navToggleMain .navbar-nav:nth-child(1){
+        width: 100%;
+        align-self: 
+        
+    }
+    
+    #navToggleMain .navbar-nav:nth-child(2){
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        
+    }
+    
 }

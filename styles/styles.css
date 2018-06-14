@@ -3,12 +3,12 @@ FULL PAGE BACKGROUND
 */
 
 html {
-/*     background: url(/images/bkg.jpg) no-repeat center center fixed;
+    background: url(/images/bkg.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    overflow: hidden; */
+    overflow: hidden; 
 }
 
 
@@ -363,13 +363,11 @@ ICONMOON
 .container {
     display: flex;
     justify-content: center;
-    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .row {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
+    max-width: 50%;
 }
 
 /* .anim1 {

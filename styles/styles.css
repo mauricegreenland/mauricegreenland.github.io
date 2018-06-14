@@ -8,17 +8,17 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    font-size: 16px;
-    font-weight: normal;
     overflow: hidden;
 }
 
 
 body {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1em;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
     color: #8d8d8d;
     letter-spacing: 2px;
+    line-height: 1.5;
 }
 
 
@@ -316,7 +316,7 @@ ICONMOON
 
 /* Small devices (landscape phones, 576px and up)*/
 
-@media (min-width: 567px) {
+@media (min-width: 576px) {
     
     #navToggleMain {
         flex-flow: row nowrap;
@@ -358,4 +358,55 @@ ICONMOON
         /* bright orange #FD8048*/
     }
     
+}
+
+.anim1 {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.2;
+    font-family: 'VT323', monospace;
+    font-style: italic;
+    font-size: 0.8em;
+    font-weight: 100;
+    text-transform: lowercase;
+    transform: rotate(5deg);
+}
+
+.html1 {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0.3s;
+}
+
+.html2 {
+    top: 90%;
+    left: 5%;
+    animation-delay: 0.3s;
+}
+
+.body1 {
+    top: 15%;
+    left: 8%;
+    animation-delay: 0.5s;
+}
+
+.body2 {
+    top: 85%;
+    left: 8%;
+    animation-delay: 0.5s;
+}
+
+.h1 {
+    top: 30%;
+    left: 12%;
+    animation-delay: 0.5s;
+}
+
+.h2 {
+    top: 75%;
+    left: 12%;
+    animation-delay: 0.5s;
 }

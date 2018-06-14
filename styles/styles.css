@@ -48,7 +48,6 @@ NAVBAR
 
 
 /*toggler button*/
-
 .navbar-toggler {
     border: none;
     background: transparent !important;
@@ -74,7 +73,6 @@ NAVBAR
 NAV LINKS
 */
 /* change the color hovered nav items */
-
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: rgba(253, 128, 72, 1);
@@ -96,7 +94,6 @@ button:hover {
 
 
 /*ANIMATED MINUS*/
-
 .navbar-toggler.minus.collapsed .icon-bar:nth-of-type(1) {
     transform: translate3d(0, 0, 0) rotate(0deg);
 }
@@ -114,6 +111,13 @@ button:hover {
 }
 
 /*END MINUS ANIMATION*/
+
+/*hover state for toggler hamburger*/
+.navbar-toggler.minus.collapsed:hover > span.icon-bar,
+.navbar-toggler.minus:hover > span.icon-bar{
+    background-color: rgba(253, 128, 72, 1);
+    /* bright orange #FD8048*/
+}
 
 /*dropdown nav content*/
 #navToggleMain {

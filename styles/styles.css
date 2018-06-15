@@ -385,78 +385,15 @@ main.container.centered {
 
 }
 
-h1 {
-    font-size: 2.5rem;
+main.container h1 {
+    animation-delay: 0.2s;
 }
 
-h2 {
-    font-size: 1.5rem;
+main.container h2 {
+    border-bottom: 1px solid #fff;
 }
 
-h3 {
-    font-size: 0.9rem
+main.container h2, 
+main.container h3 {
+    animation-delay: 0.8s;
 }
-
-
-/* .anim1 {
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    position: absolute;
-    z-index: 1;
-    opacity: 0.2;
-    font-family: 'VT323', monospace;
-    font-style: italic;
-    font-size: 0.8em;
-    font-weight: 100;
-    text-transform: lowercase;
-    transform: rotate(5deg);
-}
-
-.html1 {
-    top: 10%;
-    left: 5%;
-    animation-delay: 0.3s;
-}
-
-.html2 {
-    top: 90%;
-    left: 5%;
-    animation-delay: 0.3s;
-}
-
-.body1 {
-    top: 15%;
-    left: 8%;
-    animation-delay: 0.5s;
-}
-
-.body2 {
-    top: 85%;
-    left: 8%;
-    animation-delay: 0.5s;
-}
-
-.h1 {
-    top: 30%;
-    left: 12%;
-    animation-delay: 0.5s;
-}
-
-.h2 {
-    top: 55%;
-    left: 12%;
-    animation-delay: 0.5s;
-}
-
-.intro {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    width: 50%;
-    transform: rotate(0deg);
-    z-index: 3;
-    opacity: 1;
-    color: #fff;
-}
- */

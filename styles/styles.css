@@ -21,6 +21,18 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 0.9rem
+}
+
 
 /*
 NAVBAR
@@ -360,15 +372,31 @@ ICONMOON
     
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+    color: #fff;
 }
 
-.row {
-    max-width: 50%;
+/*center the middle of div in the center of page - horizontally and vertically*/
+main.container.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 0.9rem
+}
+
 
 /* .anim1 {
     margin: 0;

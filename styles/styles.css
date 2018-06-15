@@ -27,10 +27,12 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+
 }
 
 h3 {
-    font-size: 0.9rem
+    font-size: 0.9rem;
+    line-height: 2;
 }
 
 
@@ -374,6 +376,10 @@ ICONMOON
 
 main {
     color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 2rem 0;
 }
 
 /*center the middle of div in the center of page - horizontally and vertically*/
@@ -389,11 +395,30 @@ main.container h1 {
     animation-delay: 0.2s;
 }
 
-main.container h2 {
-    border-bottom: 1px solid #fff;
+main.container h3 {
+    font-style: normal;
+    font-weight: 100;
+    text-transform: lowercase;
+    color: #8d8d8d;
 }
 
 main.container h2, 
 main.container h3 {
     animation-delay: 0.8s;
+}
+
+.btn-outline-success {
+    width: 150px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contactPage {
+    background-color: rgba(7, 7, 7, 0.8);
+    /* very dark grey #070707*/
+    display: flex;
+    flex-flow: column nowrap; 
+    border-radius: 5px;
+    padding: 0.8rem 0.5rem;
 }

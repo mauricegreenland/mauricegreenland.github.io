@@ -348,10 +348,18 @@ main.container.centered {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-
+    height: 80%;
 }
 
-main.container h1 {
+.content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 100%;
+    
+}
+
+/* main.container h1 {
     animation-delay: 0.2s;
 }
 
@@ -372,7 +380,7 @@ main.container h3 {
     text-transform: uppercase;
     margin-top: 2rem;
     margin-bottom: 2rem;
-}
+} */
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -481,8 +489,7 @@ body {
 }
 
 .footCol {
-    width: 25%;
-    text-align: center;
+    padding: 0.5em;   
 }
 
 .hearts {

@@ -8,30 +8,32 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
     color: #8d8d8d;
     letter-spacing: 2px;
     line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.8)/*#333 Grey20*/
+    ;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 
 }
 
 h3 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 2;
 }
 
@@ -45,6 +47,7 @@ NAVBAR
     /*Custom background color #181818 very dark grey (almost black)*/
     z-index: 3;
     align-items: stretch;
+    line-height: 1.8;
 }
 
 
@@ -159,12 +162,13 @@ button:hover {
 }
 
 .navUlCustom > li {
-    margin-right: 0;
     padding: 0.25em 0;
     width: 100%;
     border-bottom: 1px solid rgba(7, 7, 7, 0.2);
     /* very dark grey #070707*/
 }
+
+
 
 
 /*NAV ICONS*/
@@ -243,8 +247,8 @@ ICONMOON
 .icon-pencil,
 .icon-newspaper,
 .icon-home {
-    font-size: 1.5em;
-    opacity: 0.8;
+    font-size: 1.2em;
+    opacity: 1;
 }
 
 #navToggleMain a {
@@ -304,7 +308,7 @@ ICONMOON
 #navToggleMain a:after {
     content: '';
     position: absolute;
-    bottom: 5%;
+    bottom: -5%;
     left: 0;
     display: block;
     width: 100%;
@@ -328,32 +332,96 @@ ICONMOON
 
 
 
+main {
+    color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+/*center the middle of div in the center of page - horizontally and vertically*/
+
+main.container.centered {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+}
+
+main.container h1 {
+    animation-delay: 0.2s;
+}
+
+main.container h3 {
+    font-style: normal;
+    font-weight: 100;
+    text-transform: lowercase;
+    color: #8d8d8d;
+}
+
+main.container h2,
+main.container h3 {
+    animation-delay: 0.8s;
+}
+
+.btn-outline-success {
+    width: 150px;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contactPage {
+    background-color: rgba(7, 7, 7, 0.8);
+    /* very dark grey #070707*/
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 5px;
+    padding: 0.8rem 0.5rem;
+}
+
+
 /* Small devices (landscape phones, 576px and up)*/
 
 @media (min-width: 576px) {
-    
+
     #navToggleMain {
         flex-flow: row nowrap;
         justify-content: center;
     }
-    
+
     #navToggleMain ul li.nav-item {
         width: 10%;
     }
-    
-    #navToggleMain .navbar-nav:nth-child(1){
+
+    #navToggleMain .navbar-nav:nth-child(1) {
         width: 100%;
-        align-self: 
-        
+        align-self:
     }
-    
-    #navToggleMain .navbar-nav:nth-child(2){
+
+    #navToggleMain .navbar-nav:nth-child(2) {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
-        
+
     }
-    
+
+    .navUlCustom li:nth-child(5) {
+        margin-right: 0;
+    }
+
+    .navUlCustom > li {
+        margin-right: 0.5em;
+        padding: 0.25em 0;
+        width: 100%;
+        border-bottom: 1px solid rgba(7, 7, 7, 0.2);
+        /* very dark grey #070707*/
+    }
+
+
     #mySocialMediaNav {
         display: flex;
     }
@@ -371,54 +439,5 @@ ICONMOON
         color: rgba(253, 128, 72, 1);
         /* bright orange #FD8048*/
     }
-    
-}
 
-main {
-    color: #fff;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    padding: 2rem 0;
-}
-
-/*center the middle of div in the center of page - horizontally and vertically*/
-main.container.centered {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-main.container h1 {
-    animation-delay: 0.2s;
-}
-
-main.container h3 {
-    font-style: normal;
-    font-weight: 100;
-    text-transform: lowercase;
-    color: #8d8d8d;
-}
-
-main.container h2, 
-main.container h3 {
-    animation-delay: 0.8s;
-}
-
-.btn-outline-success {
-    width: 150px;
-    text-transform: uppercase;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-#contactPage {
-    background-color: rgba(7, 7, 7, 0.8);
-    /* very dark grey #070707*/
-    display: flex;
-    flex-flow: column nowrap; 
-    border-radius: 5px;
-    padding: 0.8rem 0.5rem;
 }

@@ -359,7 +359,7 @@ main.container.centered {
     
 }
 
-/* main.container h1 {
+ main.container h1 {
     animation-delay: 0.2s;
 }
 
@@ -376,11 +376,10 @@ main.container h3 {
 }
 
 .btn-outline-success {
-    width: 150px;
     text-transform: uppercase;
     margin-top: 2rem;
     margin-bottom: 2rem;
-} */
+} 
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -441,16 +440,25 @@ main.container h3 {
 
     main.container.centered {
         position: fixed;
+        justify-content: flex-start;
         top: 50%;
         width: 70%;
     }
+    
+    .content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100%;
+    
+}
 
     h1 {
         font-size: 3.5rem;
     }
 
     h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
 
     }
 
@@ -458,7 +466,12 @@ main.container h3 {
         font-size: 1.7rem;
         line-height: 2;
     }
-
+    
+    .btn-outline-success {
+        margin-top: 6rem;
+        align-self: flex-start;
+    }
+    
 }
 
 body {

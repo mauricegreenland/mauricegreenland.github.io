@@ -338,7 +338,6 @@ body.flex-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    ;
 }
 
 
@@ -369,14 +368,8 @@ main.flex-container {
 main section.flex-col.intro {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
-
-/*hide contact form on smallest screens*/
-
-/* section.flex-col .contact-form {
-    display: none;
-} */
 
 .row {
     margin: 0;
@@ -476,11 +469,10 @@ footer.flex-container {
     }
 
 }
-
 /*END MEDIA BREAKPOINT - SMALL*/
 
 /* Medium devices (tablets, 768px and up)*/
-
-@media (min-width: 768px) {}
-
+@media (min-width: 768px) {
+    
+}
 /*END MEDIA BREAKPOINT - MEDIUM*/

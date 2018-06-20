@@ -374,9 +374,9 @@ main section.flex-col.intro {
 
 /*hide contact form on smallest screens*/
 
-section.flex-col .contact-form {
+/* section.flex-col .contact-form {
     display: none;
-}
+} */
 
 .row {
     margin: 0;
@@ -473,12 +473,6 @@ footer.flex-container {
     #mySocialMediaNav a:hover {
         color: rgba(253, 128, 72, 1);
         /* bright orange #FD8048*/
-    }
-
-
-    /*unhide contact form */
-    section.flex-col .contact-form {
-        display: block;
     }
 
 }

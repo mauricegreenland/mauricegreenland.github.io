@@ -14,13 +14,11 @@ html {
 
 body {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: normal;
     color: #8d8d8d;
     letter-spacing: 2px;
-    line-height: 1.5;
-    text-shadow: 1px 1px 2px rgba(51, 51, 51, 0.8);
-    /*#333 Grey20*/
+    line-height: 1;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -309,7 +307,6 @@ ICONMOON
     transition-timing-function: ease-in-out;
     transition-delay: initial;
     opacity: 0;
-
 }
 
 #navToggleMain a:hover::after {
@@ -320,180 +317,3 @@ ICONMOON
     display: none;
 }
 
-/*CONTENT SECTION*/
-
-.tag-line {
-    color: rgba(40, 167, 69, 1);
-    /*mid lime green #28a745*/
-    line-height: 2;
-}
-
-main h1,
-main h2 {
-    line-height: 2;
-    margin-bottom: 0;
-}
-
-body.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-/*position main content div in center of screen*/
-
-body.flex-container main.row {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 70%;
-    margin: 0;
-    padding: 1em;
-}
-
-main.flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    text-shadow: 1px 0px 0px rgba(229, 229, 229, 0.3);
-    /*Grey90 #e5e5e5*/
-    color: rgba(25, 25, 25, 0.8);
-    /*dark gray #191919*/
-}
-
-main section.flex-col.intro {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.row {
-    margin: 0;
-}
-
-section.flex-col div.row .col button {
-    width: 100%;
-}
-
-.btn-outline-success {
-    color: rgba(253, 128, 72, 1);
-    /* bright orange #FD8048*/
-    background-color: transparent;
-    background-image: none;
-    border-color: rgba(253, 128, 72, 1);
-    /* bright orange #FD8048*/
-}
-
-.btn-outline-success:hover,
-.btn-outline-success:focus,
-.btn-outline-success:active,
-.btn-outline-success.active,
-.open > .dropdown-toggle.btn-outline-success {
-    border-color: rgba(253, 128, 72, 1);
-    /* bright orange #FD8048*/
-    background-color: rgba(253, 128, 72, 1);
-    /* bright orange #FD8048*/
-}
-
-footer.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-
-
-
-
-/*BREAKPOINTS*/
-
-/* Small devices (landscape phones, 576px and up)*/
-
-@media (min-width: 576px) {
-
-    #navToggleMain {
-        flex-flow: row nowrap;
-        justify-content: center;
-    }
-
-    #navToggleMain ul li.nav-item {
-        width: 10%;
-    }
-
-    #navToggleMain .navbar-nav:nth-child(1) {
-        width: 100%;
-        align-self:
-    }
-
-    #navToggleMain .navbar-nav:nth-child(2) {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-
-    }
-
-    .navUlCustom li:nth-child(5) {
-        margin-right: 0;
-    }
-
-    .navUlCustom > li {
-        margin-right: 0.5em;
-        padding: 0.25em 0;
-        width: 100%;
-        border-bottom: 1px solid rgba(7, 7, 7, 0.2);
-        /* very dark grey #070707*/
-    }
-
-
-    #mySocialMediaNav {
-        display: flex;
-    }
-
-    #mySocialMediaNav a {
-        color: #8d8d8d;
-        -webkit-transition: all 0.8s ease-in-out;
-        transition-property: all;
-        transition-duration: 0.5s;
-        transition-timing-function: ease-in-out;
-        transition-delay: initial;
-    }
-
-    #mySocialMediaNav a:hover {
-        color: rgba(253, 128, 72, 1);
-        /* bright orange #FD8048*/
-    }
-
-    main section.flex-col.intro h1,
-    main section.flex-col.intro h2 {
-        font-size: 2.8em;
-    }
-    
-    main section.flex-col.intro .tag-line {
-        font-size: 1.5em;
-    }
-
-    section.flex-col div.row .col button {
-        width: 50%;
-        display: inline-block;
-
-    }
-    
-    main section.flex-col div.row div.col {
-        display: flex;
-        justify-content: center;
-    }
-
-}
-
-/*END MEDIA BREAKPOINT - SMALL*/
-
-/* Medium devices (tablets, 768px and up)*/
-
-@media (min-width: 768px) {}
-
-/*END MEDIA BREAKPOINT - MEDIUM*/

@@ -29,30 +29,6 @@ body {
 /*
 NAVBAR
 */
-
-.navbar-custom {
-    background-color: rgba(24, 24, 24, 1);
-    /*Custom background color #181818 very dark grey (almost black)*/
-    z-index: 3;
-    align-items: stretch;
-    line-height: 1.8;
-}
-
-
-/* change the brand and text color */
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: #8d8d8d;
-}
-
-.navbar-brand {
-    background-color: rgba(7, 7, 7, 1);
-    /* very dark grey #070707*/
-    text-align: center;
-}
-
-
 /*toggler button*/
 
 .navbar-toggler {
@@ -81,7 +57,6 @@ NAV LINKS
 */
 
 /* change the color hovered nav items */
-
 .navbar-custom .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
     color: rgba(253, 128, 72, 1);
@@ -90,7 +65,6 @@ NAV LINKS
 }
 
 /*remove blue box shadow from BS4 toggle button*/
-
 .button:active,
 button:active,
 .button:focus,
@@ -103,7 +77,6 @@ button:hover {
 
 
 /*ANIMATED MINUS*/
-
 .navbar-toggler.minus.collapsed .icon-bar:nth-of-type(1) {
     transform: translate3d(0, 0, 0) rotate(0deg);
 }
@@ -123,7 +96,6 @@ button:hover {
 /*END MINUS ANIMATION*/
 
 /*hover state for toggler hamburger*/
-
 .navbar-toggler.minus.collapsed:hover > span.icon-bar,
 .navbar-toggler.minus:hover > span.icon-bar {
     background-color: rgba(253, 128, 72, 1);
@@ -131,190 +103,11 @@ button:hover {
 }
 
 /*dropdown nav content*/
-
 #navToggleMain {
     font-size: 1em;
     text-transform: lowercase;
     background-color: rgba(24, 24, 24, 0.5);
     /*Custom background color #181818 very dark grey (almost black)*/
-    /*animation of drop-down nav-bar*/
-    animation-duration: 0.3s;
-    animation-timing-function: ease-in-out;
-
-}
-
-
-.navUlCustom {
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.navUlCustom > li {
-    padding: 0.25em 0;
-    width: 100%;
-    border-bottom: 1px solid rgba(7, 7, 7, 0.2);
-    /* very dark grey #070707*/
-}
-
-
-
-
-/*NAV ICONS*/
-
-/*
-ICONMOON
-*/
-
-@font-face {
-    font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?409zux');
-    src: url('fonts/icomoon.eot?409zux#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.woff2?409zux') format('woff2'),
-    url('fonts/icomoon.ttf?409zux') format('truetype'),
-    url('fonts/icomoon.woff?409zux') format('woff'),
-    url('fonts/icomoon.svg?409zux#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-home:before {
-    content: "\e900";
-}
-
-.icon-newspaper:before {
-    content: "\e904";
-}
-
-.icon-pencil:before {
-    content: "\e905";
-}
-
-.icon-user:before {
-    content: "\e971";
-}
-
-.icon-cog:before {
-    content: "\e994";
-}
-
-.icon-twitter:before {
-    content: "\ea96";
-}
-
-.icon-youtube:before {
-    content: "\ea9d";
-}
-
-.icon-linkedin:before {
-    content: "\eac9";
-}
-
-/* END ICON MOON */
-
-.icon-linkedin,
-.icon-youtube,
-.icon-twitter,
-.icon-cog,
-.icon-user,
-.icon-pencil,
-.icon-newspaper,
-.icon-home {
-    font-size: 1.2em;
-    opacity: 1;
-}
-
-#navToggleMain a {
-    display: block;
-    position: relative;
-    height: 32px;
-}
-
-/*makes the transition more graceful*/
-
-#navToggleMain a i {
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transition-delay: initial;
-    text-align: center;
-
-}
-
-/*hover over i makes icon disappear*/
-
-#navToggleMain a:hover i {
-    opacity: 0;
-}
-
-#navToggleMain ul li:hover {
-    background-color: rgba(7, 7, 7, 0.2);
-    /* very dark grey #070707*/
-}
-
-/*
-- use nth-child() to select which LI 
-- use a:first-child::after to add the content after the corresponding I tag
-*/
-
-#navToggleMain li:nth-child(1) a:first-child::after {
-    content: "HOME";
-
-}
-
-#navToggleMain li:nth-child(2) a:first-child::after {
-    content: "ABOUT";
-}
-
-#navToggleMain li:nth-child(3) a:first-child::after {
-    content: "SKILLS";
-}
-
-#navToggleMain li:nth-child(4) a:first-child::after {
-    content: "WORK";
-}
-
-#navToggleMain li:nth-child(5) a:first-child::after {
-    content: "EMAIL";
-}
-
-#navToggleMain a:after {
-    content: '';
-    position: absolute;
-    bottom: -5%;
-    left: 0;
-    display: block;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: all 0.8s ease-in-out;
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
-    opacity: 0;
-}
-
-#navToggleMain a:hover::after {
-    opacity: 1;
-}
-
-#mySocialMediaNav {
-    display: none;
 }
 
 main.container {

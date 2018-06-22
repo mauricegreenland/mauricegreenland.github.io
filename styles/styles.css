@@ -23,7 +23,7 @@ body {
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 /*
@@ -102,17 +102,4 @@ button:hover {
     /* bright orange #FD8048*/
 }
 
-/*dropdown nav content*/
-#navToggleMain {
-    font-size: 1em;
-    text-transform: lowercase;
-    background-color: rgba(24, 24, 24, 0.5);
-    /*Custom background color #181818 very dark grey (almost black)*/
-}
-
-main.container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
 

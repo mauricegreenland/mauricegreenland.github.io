@@ -35,7 +35,7 @@
 
 <body class="flex-container">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <!-- Navbar Brand -->
         <a class="navbar-brand" href="#">
             <!-- <img src="assets/bs-solid-icon.svg" width="30" height="30" alt="" class="d-inline-block align-top navbar-text py-0 pr-1"> -->MG
@@ -70,28 +70,31 @@
     <!-- Close main nav -->
 
     <!-- MAIN CONTENT -->
-    <main class="container">
+    <main class="container clearfix">
         <!-- SITE INTRO -->
-        <section>
+        <section class="float-left w-50">
             <h1>Hi, I'm <span class="d-inline-block">Maurice</span></h1>
             <h2>Full-Stack Web Developer</h2>
             <span>imagine&#124;create&#124;repeat</span>
 
         </section>
         <!-- close section -->
-        <section>
-            <div>
-                <button class="btn btn-success">Contact Me</button>
+        <section class="float-right w-50">
+            <div class="container-flex">
+               <form>
+                   <input type="email" class="form-input" placeholder="Email address">
+               </form>
+                <button class="btn btn-success">Sign me up</button>
             </div>
         </section>
         <!--close section-->
-
     </main>
     <!-- close main-->
 
-    <footer>
-        <h3>Footer</h3>
-    </footer>
+    <!-- nav for other pages -->
+    <nav class="nav justify-content-center fixed-bottom">
+        <a class="nav-link" href="#">down</a>
+    </nav>
 
     <!--BOOTSTRAP JS CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

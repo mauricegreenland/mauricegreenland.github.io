@@ -3,7 +3,7 @@ FULL PAGE BACKGROUND
 */
 
 html {
-    background: url(/images/emile-perron-190221-unsplash.jpg) no-repeat center center scroll;
+    background: url(/images/emile-perron-190221-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

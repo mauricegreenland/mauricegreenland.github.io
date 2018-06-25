@@ -102,4 +102,10 @@ button:hover {
     /* bright orange #FD8048*/
 }
 
+main.container {
+    display: flex;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
 

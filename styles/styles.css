@@ -24,6 +24,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
+    background: rgba(131,58,180,0.5);
+background: linear-gradient(180deg, rgba(131,58,180,0.5) 0%, rgba(253,29,29,0.4) 50%, rgba(252,176,69,3) 100%);
 }
 
 /*

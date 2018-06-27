@@ -19,13 +19,9 @@ body {
     color: rgba(235,239,243,1);/*#EBEFF3*/
     letter-spacing: 2px;
     line-height: 1;
-    min-height: 100vh;
+    min-height: 100vh; 
     background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    
-background: linear-gradient(90deg, rgba(253,187,45,0.8) 0%, rgba(58,28,113,0.8) 100%);
+    background: linear-gradient(90deg, rgba(253,187,45,0.8) 0%, rgba(58,28,113,0.8) 100%);
 }
 
 /*
@@ -104,5 +100,8 @@ button:hover {
     /* bright orange #FD8048*/
 }
 
+main section {
+    
+}
 
 

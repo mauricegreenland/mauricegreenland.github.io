@@ -108,9 +108,11 @@ button:hover {
 }
 
 main {
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
-main #pageHome {
-    height: 650px;
+#pageAbout,
+#pageWork,
+#pageContact {
+    min-height: 100vh;
 }

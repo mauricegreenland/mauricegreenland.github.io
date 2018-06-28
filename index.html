@@ -48,7 +48,7 @@
         </button>
         <!-- Navbar content -->
         <nav class="collapse navbar-collapse" id="navToggleMain">
-            <ul class='nav justify-content-center text-uppercase'>
+            <ul class='nav justify-content-around text-uppercase'>
                 <li class='nav-item'>
                     <a class="nav-link active" href='#'>home</a>
                 </li>
@@ -56,10 +56,10 @@
                     <a class="nav-link" href='#pageAbout'>about</a>
                 </li>
                 <li class='nav-item'>
-                    <a class="nav-link" href='#'>work</a>
+                    <a class="nav-link" href='#pageWork'>work</a>
                 </li>
                 <li class='nav-item'>
-                    <a class="nav-link" href='#'>contact</a>
+                    <a class="nav-link" href='#pageContact'>contact</a>
                 </li>
             </ul>
         </nav>
@@ -67,8 +67,8 @@
     <!-- Close main nav -->
 
     <!-- MAIN CONTENT -->
-    <main class="container d-flex flex-column flex-nowrap">
-        <div id="pageHome" class="d-flex flex-column flex-nowrap justify-content-center">
+    <main class="container d-flex flex-column flex-nowrap justify-content-center">
+        <div id="pageHome" class="d-flex flex-column flex-nowrap justify-content-around">
             <!-- SITE INTRO -->
             <section class="d-block text-center">
                 <h1 class="display-4">Maurice</h1>
@@ -92,10 +92,41 @@
     </main>
     <!-- close main-->
 
-    <!-- nav for other pages -->
-    <nav class="nav justify-content-center fixed-bottom">
-        <a class="nav-link" href="#"><span class="downArrow">&#94;</span></a>
-    </nav>
+    <!-- ABOUT PAGE -->
+    <div id="pageAbout" class="container d-flex flex-column flex-nowrap justify-content-center bg-light text-dark">
+        <section class="d-block">
+           <h3>About</h3>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
+            </p>
+        </section>
+        <!--close section-->
+    </div>
+    <!-- close div id pageAbout -->
+    
+    <!-- WORK PAGE -->
+    <div id="pageWork" class="container d-flex flex-column flex-nowrap justify-content-center bg-light text-dark">
+        <section class="d-block">
+           <h3>Work</h3>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
+            </p>
+        </section>
+        <!--close section-->
+    </div>
+    <!-- close div id pageWork -->
+
+    <!-- CONTACT PAGE -->
+    <div id="pageContact" class="container d-flex flex-column flex-nowrap justify-content-center bg-light text-dark">
+        <section class="d-block">
+           <h3>Contact</h3>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
+            </p>
+        </section>
+        <!--close section-->
+    </div>
+    <!-- close div id pageContact -->
 
     <!--BOOTSTRAP JS CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

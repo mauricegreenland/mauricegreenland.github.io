@@ -67,7 +67,7 @@
     <!-- Close main nav -->
 
     <!-- MAIN CONTENT -->
-    <main class="container d-flex flex-column flex-nowrap justify-content-center">
+    <main data-spy="scroll" data-target="#navToggleMain" data-offset="0" class="container d-flex flex-column flex-nowrap justify-content-center">
         <div id="pageHome" class="d-flex flex-column flex-nowrap">
             <!-- SITE INTRO -->
             <section class="d-block text-center mb-4">
@@ -95,40 +95,30 @@
     <!-- ABOUT PAGE -->
     <div id="pageAbout" class="container d-flex flex-row flex-nowrap bg-light text-dark align-items-stretch">
         <section class="d-flex flex-column flex-nowrap text-center justify-content-center align-content-around">
-           <h3>About</h3>
+           <h3 class="display-4">About</h3>
             <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
             </p>
             <p class="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
             </p>
+            <blockquote class="blockquote">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                <footer class="blockquote-footer">
+                    <cite title="SoAndSo">So Andso, 1985</cite>
+                </footer>
+            </blockquote>
         </section>
         <!--close section-->
     </div>
     <!-- close div id pageAbout -->
     
     <!-- WORK PAGE -->
-    <div id="pageWork" class="container d-flex flex-column flex-nowrap justify-content-center bg-light text-dark">
-        <section class="d-block">
-           <h3>Work</h3>
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
-            </p>
-        </section>
-        <!--close section-->
-    </div>
+
     <!-- close div id pageWork -->
 
     <!-- CONTACT PAGE -->
-    <div id="pageContact" class="container d-flex flex-column flex-nowrap justify-content-center bg-light text-dark">
-        <section class="d-block">
-           <h3>Contact</h3>
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, fugiat officia fuga. Explicabo neque doloribus facere cupiditate cum porro natus odio qui illo assumenda, voluptatibus sit, reiciendis, aut nostrum! Facere.
-            </p>
-        </section>
-        <!--close section-->
-    </div>
+
     <!-- close div id pageContact -->
 
     <!--BOOTSTRAP JS CDN -->
@@ -138,6 +128,7 @@
 
     <!-- MY JS SCRIPT -->
     <script src="script/scripts.js"></script>
+    
 
 </body>
 

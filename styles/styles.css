@@ -8,7 +8,8 @@ html {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    overflow: hidden;
+      /* overflow-y: hidden; */  
+
 }
 
 
@@ -24,6 +25,7 @@ body {
     background-color: transparent;
     background: rgba(67, 15, 245, 0.6);
     background: linear-gradient(90deg, rgba(67, 15, 245, 0.6) 0%, rgba(184, 49, 235, 0.6) 100%);
+    position: relative;
 }
 
 /*

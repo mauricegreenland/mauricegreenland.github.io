@@ -1,3 +1,13 @@
+/*
+COLOR CODES
+#55595C - rgb(85, 89, 92) MID GREY
+#36363B - rgb(54, 54, 59) DARK GREY
+#141A30 - rgb(20, 26, 48) DARK BLUE
+#0F295E - rgb(15, 41, 94) MID BLUE
+#5F7AA1 - rgb(95, 122, 161) LIGHT BLUE
+#BCE8E8 - rgb(188, 232, 232) LIGHT CYAN
+*/
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -11,6 +21,7 @@ header {
     position: relative;
     height: 100%;
     width: 100%;
+    background: linear-gradient(rgba(20,26,46,0.2), rgba(20,26,48,0.1));
 }
 
 .videoContainer {
@@ -21,6 +32,7 @@ header {
     height: 100%;
     opacity: 0.8;
     z-index: -1;
+    
 }
 
 .bgVideo {
@@ -32,6 +44,7 @@ header {
 
 /*navbar*/
 .myMenu {
-    background: linear-gradient(rgba(0,0,0,0.7), rbga(0,0,0,0.9));
+    background: linear-gradient(rgba(20,26,46,0.9), rgba(20,26,48,0.8));
+    border-bottom: 1px ridge rgba(20,26,46,0.1);
 }
 /*end navbar*/

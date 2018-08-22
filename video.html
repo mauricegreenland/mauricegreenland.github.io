@@ -1,0 +1,39 @@
+<!--video background-->
+        <section class="video">
+            <div class="videoContainer">
+                <video class="bgVideo" autoplay muted loop>
+                   <source src="videos/Palm_Trees/Palm_Trees.mp4" type="video/mp4">
+                   <source src="videos/Palm_Trees/Palm_Trees.webm" type="video/webm">
+                          Message for older none supported browsers
+                           Your browser is not supported!
+                </video>
+            </div>
+        </section>
+        <!--end video background-->
+        
+       
+/* header {
+    height: 100vh;
+}
+ */
+
+.video {
+    position: relative;
+    background: linear-gradient(rgba(20,26,46,0.6), rgba(20,26,48,0.1));
+}
+
+.videoContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: -1;   
+}
+
+.bgVideo {
+    object-fit:contain;
+    width: 100%;
+}
+/*end header*/

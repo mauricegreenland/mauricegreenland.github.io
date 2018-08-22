@@ -17,80 +17,47 @@
 </head>
 
 <body>
-    <header>
-        <!--video background-->
-        <section class="video">
-            <div class="videoContainer">
-                <video class="bgVideo" autoplay muted loop>
-                   <source src="videos/Palm_Trees/Palm_Trees.mp4" type="video/mp4">
-                   <source src="videos/Palm_Trees/Palm_Trees.webm" type="video/webm">
-                          <!--  Message for older none supported browsers -->
-                           Your browser is not supported!
-            </video>
+<!--header-->
+<header>
+   <!--navbar-->
+   <nav class="navbar navbar-expand-lg fixed-top myMenu">
+            <!--brand-->
+            <a href="index.html" class="navbar-brand text-light text-uppercase font-weight-bold">maurice greenland</a>
+            <!--end brand-->
+
+            <!--toggler-->
+            <button class="navbar-toggler navButton" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <!--hamburger-->
+                    <div class="line1 bg-light"></div>
+                    <div class="line2 bg-light"></div>
+                    <div class="line3 bg-light"></div>
+                    <!--end hamburger-->
+            </button>
+            <!--end toggler-->
+
+            <!--collapsable content/navigation items-->
+            <div class="navbar-collapse justify-content-end text-uppercase font-weight-bold collapse" id="myNavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem navActive">home</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">gallery</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">kit</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">noticeboard</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">contact</a></li>
+                </ul>
             </div>
-        </section>
-        <!--end video background-->
-
-        <!--banner-->
-        <section class="banner">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col bg-warning">Col1</div>
-                </div>
-                <div class="row">
-                    <div class="col bg-info">Col2</div>
-                </div>
-                <div class="row">
-                    <div class="col bg-dark">Col3</div>
-                </div>
-
-            </div>
-        </section>
-        <!--end banner-->
-    </header>
-
-
-    <!-- gallery-->
-    <section class="gallery bg-light mt-0">
-        <div class="container">
-            <!--title-->
-            <div class="row">
-                <div class="col text-center">
-                    <h2 class="display-4 py-4 mb-3 text-secondary">Gallery</h2>
-                </div>
-            </div>
-            <!--end title-->
-            <!-- photo rows -->
-            <div class="row mb-4 first-row">
-                <div class="col-lg-3">
-                    <a href="img/libraries/library1.jpg" data-lightbox="library"><img src="img/libraries/library1.jpg" alt="library 1" class="img-thumbnail gallery-img"></a>
-                </div>
-
-                <div class="col-lg-3">
-                    <a href="img/libraries/library2.jpg" data-lightbox="library"><img src="img/libraries/library2.jpg" alt="library 2" class="img-thumbnail gallery-img"></a>
-                </div>
-
-                <div class="col-lg-3">
-                    <a href="img/libraries/library3.jpg" data-lightbox="library"><img src="img/libraries/library3.jpg" alt="library 3" class="img-thumbnail gallery-img"></a>
-                </div>
-
-                <div class="col-lg-3">
-                    <a href="img/libraries/library4.jpg" data-lightbox="library"><img src="img/libraries/library4.jpg" alt="library 4" class="img-thumbnail gallery-img"></a>
-                </div>
-
-            </div>
-            <!-- end photo rows -->
-        </div>
-    </section>
-    <!-- END gallery-->
-
-
-
-
-
-
-
-
+            <!--end collapsable content/navigation items-->
+    </nav>
+   <!--end navbar-->
+   
+   <!--banner-->
+   <div class="text-light banner text-center">
+       <h1 class="display-4 bannerHeader">Tech Tech Tech</h1>
+       <p class="lead bannerLead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui itaque consectetur sunt maiores, fuga, facere aut labore dolor facilis. Facere.</p>
+   </div>
+   <!--end banner -->
+    
+</header>
+<!--END header-->
 
 
     <!--SCRIPT -->

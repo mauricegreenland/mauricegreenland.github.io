@@ -52,7 +52,15 @@ header {
 /*END BANNER*/
 
 /*SOCIAL ICONS*/
+.icons {
+    opacity: 0.7;
+    transition: all 0.4s;
+}
 
+.icons:hover {
+    opacity: 1;
+    transform: scale(1.25)
+}
 /*END SOCIAL ICONS*/
 
 

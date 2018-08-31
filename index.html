@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/lightbox.css">
     <!--GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
     <!--CSS -->
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
 
@@ -18,11 +19,11 @@
 
 <body>
 <!--header-->
-<header>
+<header class=" d-flex align-items-end">
    <!--navbar-->
    <nav class="navbar navbar-expand-lg fixed-top myMenu">
             <!--brand-->
-            <a href="index.html" class="navbar-brand text-light text-uppercase font-weight-bold">maurice greenland</a>
+            <a href="index.html" class="navbar-brand text-light text-uppercase font-weight-bold"><span class="letter letterM">m</span>aurice <span class="letter letterG">g</span>reenland</a>
             <!--end brand-->
 
             <!--toggler-->
@@ -39,7 +40,7 @@
             <div class="navbar-collapse justify-content-end text-uppercase font-weight-bold collapse" id="myNavbar">
                 <ul class="navbar-nav ">
                     <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem navActive">home</a></li>
-                    <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">gallery</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link mx-2 my-1 menuItem ">gallery</a></li>
                     <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">kit</a></li>
                     <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">noticeboard</a></li>
                     <li class="nav-item"><a href="index.html" class="nav-link mx-2 my-1 menuItem ">contact</a></li>
@@ -57,7 +58,7 @@
    <!--end banner -->
 
     <!-- social icons -->
-    <div class="socialIcons fixed-bottom mb-2 text-center">
+    <div class="socialIcons mb-2 pt-2 text-center mx-auto">
         <ul class="list-inline mb-1">
             <li class="list-inline-item mr-3">
                 <a href="#">
@@ -80,13 +81,63 @@
                 </a>
             </li>
         </ul>
-        
-        <p class="text-white font-weight-light font-italic">follow me :)</p>
+        <p class="small text-light font-weight-bold my-2 text-italic p-1">follow me :)</p>
     </div>
     <!-- END social icons -->
-    
+
 </header>
 <!--END header-->
+
+<!--gallery-->
+<section class="gallery bg-light" id="gallery">
+        <div class="container">
+            <!--title-->
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="display-4 py-4 mb-3 text-secondary">Gallery</h2>
+                </div>
+            </div>
+            <!--end title-->
+            <!-- photo rows -->
+            <div class="row mb-4 first-row align-items-end">
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam2.jpg" data-lightbox="library" data-title="Hoi An - Yellow boat at night"><img src="img/vietnam/vietnam2.jpg" alt="vietnam 2" class="img-thumbnail gallery-img"></a>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam1.jpg" data-lightbox="library" data-title="Hoi An - down the river"><img src="img/vietnam/vietnam1.jpg" alt="vietnam 1" class="img-thumbnail gallery-img"></a>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam4.jpg" data-lightbox="library" data-title="Hoi An - lanterns in street"><img src="img/vietnam/vietnam4.jpg" alt="vietnam 4" class="img-thumbnail gallery-img"></a>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam8.jpg" data-lightbox="library" data-title="Ha Long Bay - junk boat"><img src="img/vietnam/vietnam8.jpg" alt="vietnam 8" class="img-thumbnail gallery-img"></a>
+                </div>
+            </div>
+            
+            <div class="row mb-4 second-row align-items-end">
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam5.jpg" data-lightbox="library" data-title="Hanoi - pagoda"><img src="img/vietnam/vietnam5.jpg" alt="vietnam 5" class="img-thumbnail gallery-img"></a>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam6.jpg" data-lightbox="library" data-title="Saigon - Ho Chi Minh"><img src="img/vietnam/vietnam6.jpg" alt="vietnam 6" class="img-thumbnail gallery-img"></a>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam7.jpg" data-lightbox="library" data-title="Hanoi - red bridge"><img src="img/vietnam/vietnam7.jpg" alt="vietnam 7" class="img-thumbnail gallery-img"></a>
+                </div>
+                
+                <div class="col-lg-3 mb-2">
+                    <a href="img/vietnam/vietnam3.jpg" data-lightbox="library" data-title="Hoi An - Japanses bridge"><img src="img/vietnam/vietnam3.jpg" alt="vietnam 3" class="img-thumbnail gallery-img"></a>
+                </div>    
+            </div>        
+            <!-- end photo rows -->
+        </div>
+</section>
+<!--END gallery-->
 
 
     <!--SCRIPT -->
@@ -96,6 +147,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- LIGHTBOX JS-->
     <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="js/script.js"></script>
     <!--END SCRIPT -->
 </body>
 </html>

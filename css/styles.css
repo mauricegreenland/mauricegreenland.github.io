@@ -11,6 +11,7 @@ COLOR CODES
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 /*HEADER*/
@@ -68,6 +69,87 @@ header {
     transform: scale(1.25)
 }
 /*END SOCIAL ICONS*/
+
+/*GALLERY*/
+
+.galleryListItem {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+
+.activeItem{
+    color: #bce8e8;
+    font-weight: 900;
+    transition: all 0.4s;
+}
+
+
+
+
+.gallery-img {
+    /*remove shaking of image on hover*/
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 0px 5px #ddd;
+}
+
+/*gallery image row animation*/
+.first-row {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.second-row {
+    transform: translateX(3300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.animate .first-row,
+.animate .second-row {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/*end gallery image row animation*/
+/*END GALLERY*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

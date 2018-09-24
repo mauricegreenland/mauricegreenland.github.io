@@ -63,7 +63,7 @@ header {
     background: linear-gradient(rgba(20,26,46,0.8), rgba(20,26,48,0.7));
     border-bottom: 1px ridge rgba(20,26,46,0.1);
     opacity: 0.95;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .imgWrap {
@@ -84,6 +84,20 @@ header {
 }
 /*END SOCIAL ICONS*/
 
+/*PROFILE*/
+.profile {
+    transform: translateX(-650px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.slideIn .profile{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/*END PROFILE*/
+
 /*GALLERY*/
 
 .galleryListItem {
@@ -97,9 +111,6 @@ header {
     font-weight: 900;
     transition: all 0.4s;
 }
-
-
-
 
 .gallery-img {
     /*remove shaking of image on hover*/
@@ -120,7 +131,7 @@ header {
 }
 
 .second-row {
-    transform: translateX(3300px);
+    transform: translateX(300px);
     opacity: 0;
     transition: all 2.5s;
 }
@@ -130,7 +141,6 @@ header {
     transform: translateX(0);
     opacity: 1;
 }
-
 
 /*end gallery image row animation*/
 /*END GALLERY*/

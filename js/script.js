@@ -5,17 +5,23 @@ $(document).ready(function(){
       'wrapAround': true
     })
     
-    //Animation for gallery rows- scroll method
+    //Animation for profile and gallery rows- scroll method
     $(window).scroll(function(){
         let height = $(this).scrollTop();
         
-        if(height >= 310){
+        if(height >= 250){
+            $('.myProfile').addClass('slideIn');
+           } else {
+            $('.myProfile').removeClass('slideIn');
+           }
+        
+        if(height >= 250){
             $('.gallery').addClass('animate');
            } else {
-            $('.gallery').removeClass('animate');   
+            $('.gallery').removeClass('animate');
            }
     });
-    
+       
     $('.galleryListItem').click(function(){
         let value = $(this).attr('data-filter');
         

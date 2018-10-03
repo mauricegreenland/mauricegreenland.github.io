@@ -17,7 +17,7 @@ $(document).ready(function(){
             $('.myMenu').removeClass('customNav');
            }
         
-        if(height >= 400){
+        if(height >= 450){
             $('.gallery').addClass('animate');
            } else {
             $('.gallery').removeClass('animate');

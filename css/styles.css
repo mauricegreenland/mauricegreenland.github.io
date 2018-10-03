@@ -25,6 +25,8 @@ header {
 .myMenu {
     background: linear-gradient(rgba(20,26,46,0.8), rgba(20,26,48,0.7));
     border-bottom: 1px ridge rgba(20,26,46,0.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .menuItem {
@@ -38,6 +40,14 @@ header {
 
 .navActive {
     color: #bce8e8;
+}
+
+/*styles for css animation on scroll*/
+.customNav {
+    background: linear-gradient(rgba(20,26,46,0.9), rgba(20,26,48,0.8));
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.4s;
 }
 
 /*END NAVBAR*/
@@ -63,7 +73,14 @@ header {
     background: linear-gradient(rgba(20,26,46,0.8), rgba(20,26,48,0.7));
     border-bottom: 1px ridge rgba(20,26,46,0.1);
     opacity: 0.95;
-    border-radius: 5px 5px 5px 5px;
+    transform: translateX(-650px);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.slideIn .profile{
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .imgWrap {
@@ -83,20 +100,6 @@ header {
     transform: scale(1.25)
 }
 /*END SOCIAL ICONS*/
-
-/*PROFILE*/
-.profile {
-    transform: translateX(-650px);
-    opacity: 0;
-    transition: all 2.5s;
-}
-
-.slideIn .profile{
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/*END PROFILE*/
 
 /*GALLERY*/
 

@@ -9,13 +9,15 @@ $(document).ready(function(){
     $(window).scroll(function(){
         let height = $(this).scrollTop();
         
-        if(height >= 250){
+        if(height >= 350){
             $('.myProfile').addClass('slideIn');
+            $('.myMenu').addClass('customNav');
            } else {
             $('.myProfile').removeClass('slideIn');
+            $('.myMenu').removeClass('customNav');
            }
         
-        if(height >= 250){
+        if(height >= 400){
             $('.gallery').addClass('animate');
            } else {
             $('.gallery').removeClass('animate');

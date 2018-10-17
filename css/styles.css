@@ -111,7 +111,7 @@ header {
 
 .activeItem{
     color: #bce8e8;
-    font-weight: 900;
+    font-weight: bold;
     transition: all 0.4s;
 }
 
@@ -152,6 +152,14 @@ header {
 .cardAll {
     background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9));
     box-shadow: 7px 18px 50px #555;
+    /*remove shaking of image on hover*/
+    backface-visibility: hidden;
+    transition: all 0.5s;
+}
+
+.cardAll:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 0px 5px #ddd;
 }
 
 a.kitCard {

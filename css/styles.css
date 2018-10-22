@@ -6,6 +6,7 @@ COLOR CODES
 #0F295E - rgb(15, 41, 94) MID BLUE
 #5F7AA1 - rgb(95, 122, 161) LIGHT BLUE
 #BCE8E8 - rgb(188, 232, 232) LIGHT CYAN
+#FFC108 - YELLOW
 */
 
 body {
@@ -166,6 +167,71 @@ a.kitCard {
     text-decoration: none;   
 }
 /*END CARD*/
+
+/*CONTACT*/
+.contact {
+    background: linear-gradient(105deg, 
+        rgba(15,41,94,1) 0%, rgba(15,41,94, 0.95) 50%, transparent 50%),
+        url('/img/form-img.jpeg') center center no-repeat /cover;
+}
+
+.input {
+    background: transparent;
+    border: transparent;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0;
+    transition: all 0.8s;
+}
+
+.input:focus {
+    background: transparent;
+    border: transparent;
+    box-shadow: none;
+    color: #fff;
+    border-bottom: 2px solid #BCE8E8;
+}
+
+.submitButton {
+    background: #36363B;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.submitButton:hover {
+    background: #ffc108;
+    transform: translateY(-3px);
+    box-shadow: 2px 2px 5px #36363B;
+}
+
+.label {
+    color: #ffc108;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.input:placeholder-shown + .label {
+   transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media(max-width: 992px){
+    .contact {
+        background: linear-gradient(rgba(15,41,94,1), rgba(15,41,94, 0.95));
+    }
+    
+    .contactForm {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+/*VIDEO BACKGROUND*/
+/*END VIDEO BACKGROUND*/
 
 
 

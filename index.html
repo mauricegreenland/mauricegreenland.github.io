@@ -316,13 +316,21 @@
     <!-- END noticeboard -->
     
     <!-- contact -->
-    <section class="contact bg-light pb-4" id="contact">
-       
-        <div class="container-fluid">
+    <section class="contact  pb-4 mt-4 vidPar" id="contact">
+            <!-- video backround -->
+            <div class="videoContainer">
+                <video class="bg-video" autoplay muted loop>
+                    <source src="/videos/Palm_Trees/Palm_Trees.mp4" type="video/mp4">
+                    <source src="/videos/Palm_Trees/Palm_Trees.webm" type="video/webm">
+                    Your browser is not supported
+                </video>
+            </div>
+            <!-- close video background -->
+            <div class="container-fluid text-white">
             <!--title-->
             <div class="row">
                 <div class="col text-center text-muted">
-                    <h2 class="display-4 py-4 mb-3 text-secondary">Contact</h2>
+                    <h2 class="display-4 py-4 mb-3 text-white">Contact</h2>
 
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti fugit quos odit, maiores fuga.</p>
                 </div>
@@ -346,20 +354,9 @@
                         <button class="btn btn-block font-weight-bold text-uppercase p-2 submitButton">Send Message</button>
                     </form>
                 </div>
-            </div>
-
-            
+            </div>                   
         </div>
-        
-        <!-- video backround -->
-        <div class="videoContainer">
-               <video class="bg-video" autoplay muted loop>
-                   <source src="/videos/Palm_Trees/Palm_Trees.mp4" type="video/mp4">
-                   <source src="/videos/Palm_Trees/Palm_Trees.webm" type="video/webm">
-                   Your browser is not supported
-               </video>
-           </div>
-           <!-- close video background -->
+        <!-- close container fluid -->
     </section>
     <!-- END contact -->
 

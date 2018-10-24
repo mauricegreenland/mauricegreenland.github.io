@@ -1,9 +1,15 @@
 $(document).ready(function(){
+    
+    //Navburger animation
+    $('.navButton').click(function() {
+        $('.navButton').toggleClass('change');    
+    });
+    
     //Lightbox options
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
-    })
+    });
     
     //Animation for profile and gallery rows- scroll method
     $(window).scroll(function(){

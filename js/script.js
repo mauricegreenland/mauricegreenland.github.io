@@ -11,7 +11,7 @@ $(document).ready(function(){
       'wrapAround': true
     });
     
-    /*Animation for profile and gallery rows- scroll method
+    //Animation for profile and gallery rows- scroll method
     $(window).scroll(function(){
         let height = $(this).scrollTop();
         
@@ -28,7 +28,7 @@ $(document).ready(function(){
            } else {
             $('.gallery').removeClass('animate');
            }
-    });*/
+    });
        
     $('.galleryListItem').click(function(){
         let value = $(this).attr('data-filter');

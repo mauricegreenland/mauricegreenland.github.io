@@ -156,13 +156,13 @@ header {
 .first-row {
     transform: translateX(-300px);
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 .second-row {
     transform: translateX(300px);
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 .animate .first-row,
@@ -180,7 +180,7 @@ header {
     box-shadow: 7px 18px 50px #555;
     /*remove shaking of image on hover*/
     backface-visibility: hidden;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 
 .cardAll:hover {
@@ -235,7 +235,7 @@ a.kitCard {
     margin-top: -70px;
     margin-left: 4px;
     font-size: 15px;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .input:placeholder-shown + .label {

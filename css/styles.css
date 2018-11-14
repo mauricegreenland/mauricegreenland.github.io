@@ -124,6 +124,10 @@ header {
 
 /*GALLERY*/
 
+.gallery {
+    overflow-x: hidden;
+}
+
 .galleryListItem {
     color: #777;
     cursor: pointer;
@@ -148,7 +152,7 @@ header {
 }
 
 /*gallery image row animation*/
-/*
+
 .first-row {
     transform: translateX(-300px);
     opacity: 0;
@@ -166,7 +170,6 @@ header {
     transform: translateX(0);
     opacity: 1;
 }
-*/
 
 /*end gallery image row animation*/
 /*END GALLERY*/

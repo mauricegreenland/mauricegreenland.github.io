@@ -120,6 +120,10 @@ header {
     opacity: 1;
     transform: scale(1.25)
 }
+
+.profilelImg {
+    object-fit: cover;
+}
 /*END SOCIAL ICONS*/
 
 /*GALLERY*/
@@ -191,9 +195,18 @@ header {
 a.kitCard {
     text-decoration: none;   
 }
+
+.kitHeader {
+    background: linear-gradient(rgba(43,168,72, 0.7), rgba(43,168,72, 0.9));
+    transform: perspective(1000px) skewX(-20deg) rotateY(40deg);
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
 /*END CARD*/
 
 /*CONTACT*/
+.contactHeading {
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
 .contact {
     background: linear-gradient(105deg, 
         rgba(15,41,94,1) 0%, 

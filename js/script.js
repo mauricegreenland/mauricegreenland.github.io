@@ -15,7 +15,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         let height = $(this).scrollTop();
 
-        if (height >= 350) {
+        if (height >= 300) {
             $('.myProfile').addClass('slideIn');
             $('.myMenu').addClass('customNav');
         } else {

@@ -92,5 +92,19 @@ $(document).ready(function () {
         }
     });
     
+    //Add Heading to Header with typing text animation
+    const heading = 'Maurice Greenland';
+    let i = 0;
     
+    //Loop
+    const typing = () => {
+        if(i < heading.length){
+            document.querySelector('.bannerHeader').innerHTML += heading.charAt(i);
+            i++;
+           }
+        //Repeat function until if statement is no longer true
+        setTimeout(typing,150);
+    }
+    //Call function
+    typing();
 });
